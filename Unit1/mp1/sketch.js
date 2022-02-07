@@ -112,10 +112,6 @@ function draw() {
     pop();
     fill('red');
     arc(200,400,215,120,PI,0);
-
-  fill('white') ;
-  text(mouseX + ', ' + mouseY, 20, 20);
-
 }
 
 }
