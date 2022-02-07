@@ -9,7 +9,7 @@ function setup() {
 function draw() {
   background(100) ;
 
-  testSize(80) ;
+  textSize(80) ;
   textFont(font1) ;
   text(Howdy!", width/2, 100) ;
 
