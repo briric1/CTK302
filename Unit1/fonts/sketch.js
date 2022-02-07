@@ -2,8 +2,8 @@ let font1, font2
 // fonts came from https://fonts.google.com/
 function setup() {
   createCanvas(500, 500);
-  font1 = loadFont ("assets/SyneTactile-Regular.ttf")
-  font2 = loadFont ("assets/Yellowtail-Regular.ttf")
+  font1 = loadFont ("assets/SyneTactile-Regular.ttf");
+  font2 = loadFont ("assets/Yellowtail-Regular.ttf");
 }
 
 function draw() {
