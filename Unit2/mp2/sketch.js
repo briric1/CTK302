@@ -3,7 +3,7 @@ let goodg;
 let badg;
 let guit;
 let blood;
-let state = 0;
+let state = -1;
 let font1;
 let font2;
 var mic;
@@ -35,6 +35,10 @@ function draw() {
   textAlign(CENTER);
 
 switch (state) {
+  case -1:
+  text("Click to start",width/2,height/2);
+  break;
+  background(255);
   case 0:
   image(bg,0,0);
   image(goodg,600,250,90,110);
