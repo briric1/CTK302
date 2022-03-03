@@ -47,7 +47,7 @@ switch (state) {
     timer = 0;
     state = 1;
   }
-  if (vol>0.3) {
+  if (vol>0.2) {
     state = 2;
   }
 
