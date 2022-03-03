@@ -79,9 +79,12 @@ switch (state) {
   image(goodg,600,250,90,110);
   text("You scared them away!",210,300);
   break;
-} 
+}
 
 }
 function mouseReleased() {
   state = 0;
+}
+function touchStarted() {
+  getAudioContext().resume();
 }
