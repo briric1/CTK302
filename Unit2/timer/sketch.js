@@ -1,5 +1,5 @@
 let state = 0;
-
+let timer = 0;
 function setup() {
   createCanvas(400, 400);
 }
@@ -15,8 +15,8 @@ function draw() {
       text("0", 100, 100);
       //timer code
       timer++;
-      if (time > 3*60) {
-        timer = 0;
+      if (timer > 3*60) {
+      //  timer = 0;
         state = 1 ;
       }
 
@@ -27,19 +27,20 @@ function draw() {
       text("1", 100, 100);
       //timer code
       timer++;
-      if (time > 5*60) {
-        timer = 0;
+      if (timer > 5*60) {
+      //  timer = 0;
         state = 2 ;
       }
 
       break;
 
     case 2:
+    background("blue");
       text("2", 100, 100);
 
       //timer code
       timer++;
-      if (time > 7*60) {
+      if (timer > 7*60) {
         timer = 0;
         state = 0 ;
       }
@@ -50,6 +51,8 @@ function draw() {
 
 function mouseReleased() {
   state++;
-  if (state > 2) state = 0;
+  if (state > 2) {
 
+  state = 0;
+}
 }
