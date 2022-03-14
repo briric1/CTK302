@@ -24,7 +24,7 @@ function avatar() {
   fill(225, 169,100);
   rect(200,333,68,100)
   fill(245, 189, 120)
-  ellipse(width/2, height/2, 235, 260);
+  ellipse(200, 200, 235, 260);
   fill('brown');
   arc(200,146,215,155,PI,0);
   triangle(92,145,124,160,120,145);
