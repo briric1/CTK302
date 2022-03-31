@@ -3,7 +3,6 @@ let notifs = [];
 let i = 0;
 let brain;
 let state = 0;
-//let timer = 0;
 let maxBooks = 5;
 let maxNotifs = 5;
 let mp3_background;
@@ -13,7 +12,7 @@ let sfx1;
 
 function preload() {
   song1 = loadSound("assets/bensound-thelounge.mp3");
-  sfx1 = loadSound("assets/discsound");
+  sfx1 = loadSound("assets/discsound.mp3");
   song1.play();
   song1.loop();
 }
@@ -105,7 +104,7 @@ function mouseReleased() {
 }
 
 function resetGame() {
-  //timer = 0;
+
   books = [];
   for (let i = 0; i < maxBooks; i++) {
     books.push(new Book());
@@ -175,7 +174,7 @@ class Book {
 
   // constructor/attributes
   constructor() {
-    this.pos = createVector(100, 100); //x + y coordinates
+    this.pos = createVector(100, 100); //x+y coords
     this.vel = createVector(random(-5, 5), random(-5, 5));
 
   }
@@ -201,7 +200,7 @@ class Notif {
 
   // constructor and attributes
   constructor() {
-    this.pos = createVector(800, 500); //x + y coordinates
+    this.pos = createVector(800, 500); //x+y coords
     this.vel = createVector(random(-5, 5), random(-5, 5));
 
   }
