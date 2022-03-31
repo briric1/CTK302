@@ -183,7 +183,7 @@ class Book {
   // methods
 
   display() {
-    image(books, this.pos.x, this.pos.y,50,50);
+    image(books, this.pos.x, this.pos.y, 50, 50);
 
   }
 
@@ -209,7 +209,7 @@ class Notif {
   // methods
 
   display() {
-    image(notifs, this.pos.x, this.pos.y, 50,50);
+    image(notifs, this.pos.x, this.pos.y, 50, 50);
 
   }
 
