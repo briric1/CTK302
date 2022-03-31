@@ -9,10 +9,11 @@ let maxNotifs = 5;
 let mp3_background;
 let f1, f2;
 let song1;
+let sfx1;
 
 function preload() {
   song1 = loadSound("assets/bensound-thelounge.mp3");
-
+  sfx1 = loadSound("assets/discsound");
   song1.play();
   song1.loop();
 }
@@ -144,6 +145,7 @@ function game() {
     notifs[i].move();
 
     if (notifs[i].pos.dist(naviPos) < 50) { //enemy hitbox
+      sfx1.play();
       state = 3;
     }
   }
