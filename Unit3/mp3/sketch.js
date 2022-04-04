@@ -9,12 +9,13 @@ let mp3_background;
 let f1, f2;
 let song1;
 let sfx1;
-
+let hw;
+let redbox;
 function preload() {
   song1 = loadSound("assets/bensound-thelounge.mp3");
   sfx1 = loadSound("assets/discsound.mp3");
-  song1.play();
-  song1.loop();
+
+
 }
 
 function setup() {
@@ -28,8 +29,6 @@ function setup() {
 
   //player
 
-
-
   mp3_background = loadImage("assets/blurbg.jpeg");
 
   for (let i = 0; i < maxBooks; i++) {
@@ -42,10 +41,12 @@ function setup() {
 
   naviPos = createVector(width / 2, height / 2);
 
-  // ALL load commands here, will need Atom-live-server
+  // ALL load commands here
   brain = loadImage("assets/brainman.png");
-  notifs = loadImage("assets/discnotif.png");
-  books = loadImage("assets/hwbook.png");
+  redbox = loadImage("assets/discnotif.png");
+  hw = loadImage("assets/hwbook.png");
+
+  song1.play();
 }
 
 function draw() {
@@ -156,7 +157,6 @@ function game() {
 }
 
 
-
 function checkForKeys() {
   if (keyIsDown(LEFT_ARROW)) naviPos.x -= 5;
   if (keyIsDown(RIGHT_ARROW)) naviPos.x += 5;
@@ -182,7 +182,7 @@ class Book {
   // methods
 
   display() {
-    image(books, this.pos.x, this.pos.y, 50, 50);
+    image(hw, this.pos.x, this.pos.y, 50, 50);
 
   }
 
@@ -208,7 +208,7 @@ class Notif {
   // methods
 
   display() {
-    image(notifs, this.pos.x, this.pos.y, 50, 50);
+    image(redbox, this.pos.x, this.pos.y, 50, 50);
 
   }
 
