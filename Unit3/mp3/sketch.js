@@ -56,15 +56,18 @@ function draw() {
 
     case 0:
       image(mp3_background, width / 2, height / 2, 1000, 600);
-      fill('black');
+      fill('#001A4B');
+      rect(150, 34, 700, 100, 20);
+      fill('white');
       textFont(f1);
-      textSize(32);
-      text("Do Your Homework", width / 2, 100);
+      textSize(60);
+      text("Do Your Homework", width / 2, 105);
+      fill('black');
       textFont(f2);
-      textSize(24);
-      text("Finish the homework before the notifications get you!", width / 2, 250);
+      textSize(32);
+      text("Finish the homework before the notifications get you.", width / 2, 250);
       textSize(48);
-      text("Click to begin!", width / 2, 650);
+      text("Click to begin!", width / 2, 530);
       break;
 
     case 1:
@@ -74,13 +77,13 @@ function draw() {
 
     case 2: // win state
       image(mp3_background, width / 2, height / 2, 1000, 600);
-      textSize(28);
+      textSize(48);
       text("You win! The homework is done.", width / 2, height / 2);
       break;
 
     case 3: // lose state
       image(mp3_background, width / 2, height / 2, 1000, 600);
-      textSize(28);
+      textSize(48);
       text("Oh no! You got distracted.", width / 2, height / 2);
       break;
 
