@@ -25,7 +25,8 @@ function setup() {
   imageMode(CENTER);
   textAlign(CENTER);
 
-  f1 = loadFont("assets/Yellowtail-Regular.ttf");
+  f1 = loadFont("assets/BungeeInline-Regular.ttf");
+  f2 = loadFont("assets/CarterOne-Regular.ttf");
 
   //player
 
@@ -59,6 +60,7 @@ function draw() {
       textFont(f1);
       textSize(32);
       text("Do Your Homework", width / 2, 100);
+      textFont(f2);
       textSize(24);
       text("Finish the homework before the notifications get you!", width / 2, 250);
       textSize(48);
@@ -73,7 +75,7 @@ function draw() {
     case 2: // win state
       image(mp3_background, width / 2, height / 2, 1000, 600);
       textSize(28);
-      text("You did it!", width / 2, height / 2);
+      text("You win! The homework is done.", width / 2, height / 2);
       break;
 
     case 3: // lose state
