@@ -68,7 +68,7 @@ function draw() {
       textFont(f1);
       textSize(32);
       fill(0);
-      //text("Normal, IL", 992,41);
+      text("Normal, IL", 992,41);
       labels();
 
       // textFont(f1);
